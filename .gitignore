@@ -15,3 +15,4 @@ shot_*.png
 ref/
 icon_preview.svg.png
 .DS_Store
+.idea/
