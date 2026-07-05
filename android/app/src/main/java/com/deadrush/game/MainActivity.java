@@ -84,6 +84,25 @@ public class MainActivity extends Activity {
 
         setContentView(webView);
         hideSystemUi();
+
+        // targetSdk 36: predictive back is on by default and onBackPressed() is no
+        // longer dispatched — register the new callback on API 33+ instead.
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            getOnBackInvokedDispatcher().registerOnBackInvokedCallback(
+                    android.window.OnBackInvokedDispatcher.PRIORITY_DEFAULT,
+                    this::dispatchGameBack);
+        }
+    }
+
+    /** Ask the game how to handle back: pause / go home, or exit the activity. */
+    private void dispatchGameBack() {
+        webView.evaluateJavascript(
+                "window.handleBack ? window.handleBack() : 'exit'",
+                result -> {
+                    if (result != null && result.contains("exit")) {
+                        finish();
+                    }
+                });
     }
 
     private void hideSystemUi() {
@@ -115,14 +134,8 @@ public class MainActivity extends Activity {
 
     @Override
     public void onBackPressed() {
-        // Ask the game first: in-game → navigate to home screen; on home → exit.
-        webView.evaluateJavascript(
-                "window.handleBack ? window.handleBack() : 'exit'",
-                result -> {
-                    if (result != null && result.contains("exit")) {
-                        finish();
-                    }
-                });
+        // Pre-API-33 path only; API 33+ uses OnBackInvokedCallback above.
+        dispatchGameBack();
     }
 
     @Override
