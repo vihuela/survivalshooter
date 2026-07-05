@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="432" height="432" viewBox="0 0 108 108">
+  <!-- adaptive icon preview: bg + fg, safe zone ~ center 66dp -->
+  <rect width="108" height="108" fill="#141B24"/>
+  <!-- targeting ring behind the head -->
+  <circle cx="54" cy="54" r="26" fill="none" stroke="#FF9226" stroke-width="3"/>
+  <rect x="52.5" y="22" width="3" height="10" fill="#FF9226"/>
+  <rect x="52.5" y="76" width="3" height="10" fill="#FF9226"/>
+  <rect x="22" y="52.5" width="10" height="3" fill="#FF9226"/>
+  <rect x="76" y="52.5" width="10" height="3" fill="#FF9226"/>
+  <!-- blocky zombie head -->
+  <rect x="34" y="33" width="40" height="40" fill="#7FA75D"/>
+  <rect x="34" y="33" width="40" height="8" fill="#4F6B3C"/>
+  <rect x="34" y="41" width="4" height="32" fill="#8FBC6B"/>
+  <rect x="70" y="41" width="4" height="32" fill="#5E7F46"/>
+  <!-- bite notch (bg color) -->
+  <rect x="70" y="33" width="6" height="6" fill="#141B24"/>
+  <!-- brows -->
+  <rect x="39" y="45" width="11" height="3" fill="#3F5530"/>
+  <rect x="58" y="45" width="11" height="3" fill="#3F5530"/>
+  <!-- glowing eyes -->
+  <rect x="40" y="48" width="9" height="9" fill="#7A1408"/>
+  <rect x="41.5" y="52.5" width="6" height="6" fill="#FF3B26"/>
+  <rect x="42" y="50" width="2" height="2" fill="#FFC9B8"/>
+  <rect x="59" y="48" width="9" height="9" fill="#7A1408"/>
+  <rect x="60.5" y="52.5" width="6" height="6" fill="#FF3B26"/>
+  <rect x="61" y="50" width="2" height="2" fill="#FFC9B8"/>
+  <!-- nose -->
+  <rect x="52" y="55" width="4" height="5" fill="#5E7F46"/>
+  <!-- scar -->
+  <rect x="65" y="59" width="7" height="2" fill="#5E7F46"/>
+  <rect x="66.5" y="57.5" width="2" height="5" fill="#5E7F46"/>
+  <!-- mouth + teeth -->
+  <rect x="40" y="63" width="28" height="8" fill="#26301F"/>
+  <rect x="42" y="63" width="4" height="4" fill="#DCE5C9"/>
+  <rect x="50" y="67" width="4" height="4" fill="#DCE5C9"/>
+  <rect x="58" y="63" width="4" height="4" fill="#DCE5C9"/>
+  <rect x="64" y="67" width="3" height="4" fill="#DCE5C9"/>
+</svg>

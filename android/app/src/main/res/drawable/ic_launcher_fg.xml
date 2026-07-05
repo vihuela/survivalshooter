@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Blocky zombie head in an orange crosshair — matches the in-game voxel style. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- crosshair ring + ticks -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FF9226"
+        android:strokeWidth="3"
+        android:pathData="M54,54 m-26,0 a26,26 0 1,0 52,0 a26,26 0 1,0 -52,0" />
+    <path android:fillColor="#FF9226" android:pathData="M52.5,22 h3 v10 h-3 Z" />
+    <path android:fillColor="#FF9226" android:pathData="M52.5,73 h3 v10 h-3 Z" />
+    <path android:fillColor="#FF9226" android:pathData="M22,49.5 h10 v3 h-10 Z" />
+    <path android:fillColor="#FF9226" android:pathData="M76,49.5 h10 v3 h-10 Z" />
+
+    <!-- head base -->
+    <path android:fillColor="#7FA75D" android:pathData="M34,33 h40 v40 h-40 Z" />
+    <!-- hair band -->
+    <path android:fillColor="#4F6B3C" android:pathData="M34,33 h40 v8 h-40 Z" />
+    <!-- side shading -->
+    <path android:fillColor="#8FBC6B" android:pathData="M34,41 h4 v32 h-4 Z" />
+    <path android:fillColor="#5E7F46" android:pathData="M70,41 h4 v32 h-4 Z" />
+    <!-- bite notch (bg color) -->
+    <path android:fillColor="#141B24" android:pathData="M70,33 h6 v6 h-6 Z" />
+    <!-- brows -->
+    <path android:fillColor="#3F5530" android:pathData="M39,45 h11 v3 h-11 Z" />
+    <path android:fillColor="#3F5530" android:pathData="M58,45 h11 v3 h-11 Z" />
+    <!-- glowing eyes -->
+    <path android:fillColor="#7A1408" android:pathData="M40,48 h9 v9 h-9 Z" />
+    <path android:fillColor="#FF3B26" android:pathData="M41.5,49.5 h6 v6 h-6 Z" />
+    <path android:fillColor="#FFC9B8" android:pathData="M42,50 h2 v2 h-2 Z" />
+    <path android:fillColor="#7A1408" android:pathData="M59,48 h9 v9 h-9 Z" />
+    <path android:fillColor="#FF3B26" android:pathData="M60.5,49.5 h6 v6 h-6 Z" />
+    <path android:fillColor="#FFC9B8" android:pathData="M61,50 h2 v2 h-2 Z" />
+    <!-- nose -->
+    <path android:fillColor="#5E7F46" android:pathData="M52,55 h4 v5 h-4 Z" />
+    <!-- scar -->
+    <path android:fillColor="#5E7F46" android:pathData="M65,59 h7 v2 h-7 Z" />
+    <path android:fillColor="#5E7F46" android:pathData="M66.5,57.5 h2 v5 h-2 Z" />
+    <!-- mouth + teeth -->
+    <path android:fillColor="#26301F" android:pathData="M40,63 h28 v8 h-28 Z" />
+    <path android:fillColor="#DCE5C9" android:pathData="M42,63 h4 v4 h-4 Z" />
+    <path android:fillColor="#DCE5C9" android:pathData="M50,67 h4 v4 h-4 Z" />
+    <path android:fillColor="#DCE5C9" android:pathData="M58,63 h4 v4 h-4 Z" />
+    <path android:fillColor="#DCE5C9" android:pathData="M64,67 h3 v4 h-3 Z" />
+</vector>
